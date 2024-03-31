@@ -17,7 +17,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
         @ComponentScan.Filter(type = FilterType.CUSTOM, classes = {AutoConfigurationExcludeFilter.class}),
         @ComponentScan.Filter(type = FilterType.REGEX,
                 pattern = {"com.alibaba.nacos.core.namespace.*",
-                        "com.alibaba.nacos.core.service.NamespaceOperationService","com.alibaba.nacos.persistence.repository.*"}),
+                        "com.alibaba.nacos.core.service.NamespaceOperationService","com.alibaba.nacos.persistence.repository.*",
+                        "com.alibaba.nacos.core.persistence.*"}),
 })
 @ServletComponentScan
 @EnableScheduling
